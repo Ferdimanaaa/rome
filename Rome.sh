@@ -1,3 +1,21 @@
+const WebSocket = require('ws');
+const { promisify } = require('util');
+const fs = require('fs');
+const readline = require('readline');
+const axios = require('axios');
+const HttpsProxyAgent = require('https-proxy-agent');
+const chalk = require('chalk');
+
+console.log(chalk.cyan.bold(`███╗░░░███╗░██████╗░░██████╗██╗░░██╗██╗░░░██╗`));
+console.log(chalk.cyan.bold(`████╗░████║██╔════╝░██╔════╝██║░██╔╝╚██╗░██╔╝`));
+console.log(chalk.cyan.bold(`██╔████╔██║██║░░██╗░╚█████╗░█████═╝░░╚████╔╝░`));
+console.log(chalk.cyan.bold(`██║╚██╔╝██║██║░░╚██╗░╚═══██╗██╔═██╗░░░╚██╔╝░░`));
+console.log(chalk.cyan.bold(`██║░╚═╝░██║╚██████╔╝██████╔╝██║░╚██╗░░░██║░░░`));
+console.log(chalk.cyan.bold(`╚═╝░░░░░╚═╝░╚═════╝░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░`));
+console.log(chalk.cyan.bold(`==============================================`));
+console.log(chalk.cyan.bold(`    TESTNET       : ROME DEPLOY SMARTCONTRACT `));
+console.log(chalk.cyan.bold(`==============================================`));
+
 #!/bin/bash
 
 # Function to print messages in colors
